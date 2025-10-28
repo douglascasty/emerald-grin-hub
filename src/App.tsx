@@ -14,29 +14,35 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const Layout = () => (
+  <>
+    <a href="#main" className="skip-link">
+      Pular para o conteúdo
+    </a>
+    <Header />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/servicos" element={<ServicesPage />} />
+      <Route path="/contato" element={<ContactPage />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+    <Footer />
+    <WhatsappButton />
+  </>
+);
+
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <HelmetProvider>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <a href="#main" className="skip-link">
-            Pular para o conteúdo
-          </a>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/servicos" element={<ServicesPage />} />
-            <Route path="/contato" element={<ContactPage />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          <Footer />
-          <WhatsappButton />
+          <Layout />
         </BrowserRouter>
       </TooltipProvider>
-    </HelmetProvider>
-  </QueryClientProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;
