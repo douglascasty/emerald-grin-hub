@@ -17,17 +17,17 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 160 32% 20%;
 
-    --primary: 160 32% 28%;
+    --primary: 160 40% 24%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 160 32% 38%;
+    --primary-light: 160 40% 35%;
 
-    --secondary: 33 95% 52%;
+    --secondary: 30 100% 60%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 160 15% 96%;
     --muted-foreground: 160 15% 40%;
 
-    --accent: 33 95% 52%;
+    --accent: 30 100% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -35,18 +35,18 @@ All colors MUST be HSL.
 
     --border: 160 15% 88%;
     --input: 160 15% 88%;
-    --ring: 160 32% 28%;
+    --ring: 160 40% 24%;
 
     --radius: 0.75rem;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(160 32% 28%), hsl(160 32% 38%));
-    --gradient-accent: linear-gradient(135deg, hsl(33 95% 52%), hsl(33 95% 62%));
+    --gradient-primary: linear-gradient(135deg, hsl(160 40% 24%), hsl(160 40% 35%));
+    --gradient-accent: linear-gradient(135deg, hsl(30 100% 60%), hsl(30 100% 70%));
     
     /* Shadows */
-    --shadow-sm: 0 2px 8px hsla(160 32% 28% / 0.1);
-    --shadow-md: 0 4px 16px hsla(160 32% 28% / 0.15);
-    --shadow-lg: 0 8px 32px hsla(160 32% 28% / 0.2);
+    --shadow-sm: 0 2px 8px hsla(160 40% 24% / 0.1);
+    --shadow-md: 0 4px 16px hsla(160 40% 24% / 0.15);
+    --shadow-lg: 0 8px 32px hsla(160 40% 24% / 0.2);
     
     /* Transitions */
     --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -78,16 +78,16 @@ All colors MUST be HSL.
     --popover: 160 28% 16%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 160 32% 38%;
+    --primary: 160 40% 35%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 33 95% 52%;
+    --secondary: 30 100% 60%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 160 20% 22%;
     --muted-foreground: 160 10% 65%;
 
-    --accent: 33 95% 52%;
+    --accent: 30 100% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50%;
@@ -95,7 +95,7 @@ All colors MUST be HSL.
 
     --border: 160 20% 25%;
     --input: 160 20% 25%;
-    --ring: 160 32% 38%;
+    --ring: 160 40% 35%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

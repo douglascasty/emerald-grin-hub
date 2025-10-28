@@ -27,19 +27,19 @@ const Footer = () => {
                 <span>(11) 97060-4418</span>
               </a>
               <a
-                href="mailto:contato@greensmile.com.br"
+                href="mailto:greensmile_odonto@hotmail.com"
                 className="flex items-start gap-2 hover:opacity-80 transition-opacity"
-                aria-label="Enviar email para contato@greensmile.com.br"
+                aria-label="Enviar email para greensmile_odonto@hotmail.com"
               >
                 <Mail size={18} className="mt-0.5 flex-shrink-0" />
-                <span>contato@greensmile.com.br</span>
+                <span>greensmile_odonto@hotmail.com</span>
               </a>
               <div className="flex items-start gap-2">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0" />
                 <address className="not-italic">
-                  Av. Paulista, 1000<br />
-                  Bela Vista, São Paulo - SP<br />
-                  CEP: 01310-100
+                  Av. Eng. Armando de Arruda Pereira, 2357<br />
+                  Jabaquara, São Paulo - SP<br />
+                  CEP: 04309-011
                 </address>
               </div>
             </div>
@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
             <div className="flex gap-4 pt-4">
               <a
-                href="https://instagram.com/greensmile"
+                href="https://instagram.com/greensmile_odonto"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors"
@@ -64,7 +64,7 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a
-                href="https://facebook.com/greensmile"
+                href="https://facebook.com/61582121762981"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors"

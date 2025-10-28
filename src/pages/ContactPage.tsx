@@ -9,7 +9,7 @@ const ContactPage = () => {
         <title>Contato - Green Smile Clínica Odontológica</title>
         <meta
           name="description"
-          content="Entre em contato com a Green Smile. Agende sua consulta pelo telefone (11) 97060-4418 ou preencha nosso formulário. Estamos na Av. Paulista, São Paulo."
+          content="Entre em contato com a Green Smile. Agende sua consulta pelo telefone (11) 97060-4418 ou preencha nosso formulário. Estamos na Av. Eng. Armando de Arruda Pereira, Jabaquara, São Paulo."
         />
         <link rel="canonical" href={`${window.location.origin}/contato`} />
         
@@ -40,9 +40,9 @@ const ContactPage = () => {
                   <div>
                     <h3 className="font-bold text-lg mb-1">Endereço</h3>
                     <address className="not-italic text-muted-foreground">
-                      Av. Paulista, 1000<br />
-                      Bela Vista, São Paulo - SP<br />
-                      CEP: 01310-100
+                      Av. Eng. Armando de Arruda Pereira, 2357<br />
+                      Jabaquara, São Paulo - SP<br />
+                      CEP: 04309-011
                     </address>
                   </div>
                 </div>
@@ -69,10 +69,10 @@ const ContactPage = () => {
                   <div>
                     <h3 className="font-bold text-lg mb-1">E-mail</h3>
                     <a
-                      href="mailto:contato@greensmile.com.br"
+                      href="mailto:greensmile_odonto@hotmail.com"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      contato@greensmile.com.br
+                      greensmile_odonto@hotmail.com
                     </a>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ const ContactPage = () => {
               {/* Map placeholder */}
               <div className="aspect-video rounded-xl overflow-hidden border-2 border-border">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975888574967!2d-46.65620568502154!3d-23.561684984682436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.8859392746935!2d-46.62438212503803!3d-23.617099378765597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a7395c48d7b%3A0x7a4e4e1e5e5e5e5e!2sAv.%20Eng.%20Armando%20de%20Arruda%20Pereira%2C%202357%20-%20Jabaquara%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004309-011!5e0!3m2!1spt-BR!2sbr!4v1640000000000"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
