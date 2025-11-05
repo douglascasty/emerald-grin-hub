@@ -32,17 +32,25 @@ const Hero = () => {
 
           {/* Main heading with 3D text effect */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
-            Seu sorriso merece o{" "}
+            <span className="inline-block" style={{
+              textShadow: '2px 2px 0 rgba(0,0,0,0.1), 4px 4px 0 rgba(0,0,0,0.08), 6px 6px 0 rgba(0,0,0,0.06), 8px 8px 20px rgba(0,0,0,0.15)'
+            }}>
+              Seu sorriso merece o{" "}
+            </span>
             <span className="relative inline-block">
-              <span className="absolute inset-0 bg-gradient-to-r from-accent via-accent/80 to-primary blur-2xl opacity-50"></span>
-              <span className="relative bg-gradient-to-r from-accent via-accent to-primary bg-clip-text text-transparent drop-shadow-2xl">
+              <span className="absolute inset-0 bg-gradient-to-r from-accent via-accent/80 to-primary blur-2xl opacity-60"></span>
+              <span className="relative bg-gradient-to-r from-accent via-accent to-primary bg-clip-text text-transparent" style={{
+                filter: 'drop-shadow(2px 2px 4px rgba(255, 140, 50, 0.4)) drop-shadow(4px 4px 8px rgba(0,0,0,0.3)) drop-shadow(0 0 20px rgba(255, 140, 50, 0.3))'
+              }}>
                 melhor cuidado
               </span>
             </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed" style={{
+            textShadow: '1px 1px 2px rgba(0,0,0,0.1), 2px 2px 4px rgba(0,0,0,0.08), 3px 3px 6px rgba(0,0,0,0.06)'
+          }}>
             Implantes, Ortodontia e Estética Dental com tecnologia de ponta e atendimento humanizado
           </p>
 
