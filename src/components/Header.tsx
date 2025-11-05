@@ -44,7 +44,7 @@ const Header = () => {
         <nav role="navigation" className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 transition-transform hover:scale-105">
-            <img src={logo} alt="Green Smile - Clínica Odontológica" className="h-12 w-auto" />
+            <img src={logo} alt="Green Smile - Clínica Odontológica" className="h-14 w-auto drop-shadow-lg" />
           </Link>
 
           {/* Desktop Navigation */}
