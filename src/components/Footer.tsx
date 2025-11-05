@@ -1,9 +1,7 @@
 import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
 import logo from "@/assets/logo.png";
-
 const Footer = () => {
-  return (
-    <footer role="contentinfo" className="bg-primary text-primary-foreground">
+  return <footer role="contentinfo" className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Description */}
@@ -18,21 +16,13 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Contato</h3>
             <div className="space-y-3 text-sm">
-              <a
-                href="tel:+5511970604418"
-                className="flex items-start gap-2 hover:opacity-80 transition-opacity"
-                aria-label="Ligar para (11) 97060-4418"
-              >
+              <a href="tel:+5511970604418" className="flex items-start gap-2 hover:opacity-80 transition-opacity" aria-label="Ligar para (11) 97060-4418">
                 <Phone size={18} className="mt-0.5 flex-shrink-0" />
                 <span>(11) 97060-4418</span>
               </a>
-              <a
-                href="mailto:greensmile_odonto@hotmail.com"
-                className="flex items-start gap-2 hover:opacity-80 transition-opacity"
-                aria-label="Enviar email para greensmile_odonto@hotmail.com"
-              >
+              <a href="mailto:greensmile_odonto@hotmail.com" className="flex items-start gap-2 hover:opacity-80 transition-opacity" aria-label="Enviar email para greensmile_odonto@hotmail.com">
                 <Mail size={18} className="mt-0.5 flex-shrink-0" />
-                <span>greensmile_odonto@hotmail.com</span>
+                <span>matrixgreen@hotmail.com</span>
               </a>
               <div className="flex items-start gap-2">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0" />
@@ -54,22 +44,10 @@ const Footer = () => {
               <p>Domingo: Fechado</p>
             </div>
             <div className="flex gap-4 pt-4">
-              <a
-                href="https://instagram.com/greensmile_odonto"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors"
-                aria-label="Seguir no Instagram"
-              >
+              <a href="https://instagram.com/greensmile_odonto" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors" aria-label="Seguir no Instagram">
                 <Instagram size={20} />
               </a>
-              <a
-                href="https://facebook.com/61582121762981"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors"
-                aria-label="Seguir no Facebook"
-              >
+              <a href="https://facebook.com/61582121762981" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors" aria-label="Seguir no Facebook">
                 <Facebook size={20} />
               </a>
             </div>
@@ -80,8 +58,6 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} Green Smile Clínica Odontológica. Todos os direitos reservados.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
