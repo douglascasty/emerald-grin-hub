@@ -1,0 +1,9 @@
+# Green Smile Clínica Odontológica
+
+> Clínica odontológica em São Paulo (Jabaquara) especializada em implantes dentários, ortodontia, estética dental e odontologia geral, com atendimento humanizado e tecnologia de ponta.
+
+## Pages
+
+- [Início](/): Visão geral da clínica, diferenciais, serviços em destaque e formas de contato.
+- [Serviços](/servicos): Implantes, ortodontia, estética dental e odontologia geral, com benefícios e investimento.
+- [Contato](/contato): Endereço (Av. Eng. Armando de Arruda Pereira, 2357, Jabaquara, São Paulo), telefone (11) 97060-4418, e-mail, horários e formulário de agendamento.
