@@ -64,10 +64,21 @@ const ServicesPage = () => {
           content="Conheça nossos serviços: implantes dentários, ortodontia, estética dental e odontologia geral. Tecnologia de ponta e atendimento humanizado."
         />
         <link rel="canonical" href={`${window.location.origin}/servicos`} />
-        
+
         <meta property="og:title" content="Nossos Serviços - Green Smile" />
         <meta property="og:description" content="Implantes, ortodontia, estética dental e mais" />
         <meta property="og:url" content={`${window.location.origin}/servicos`} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": servicesDetailed.map((s) => ({
+            "@type": "Service",
+            name: s.title,
+            description: s.description,
+            provider: { "@type": "Dentist", name: "Green Smile Clínica Odontológica" },
+            areaServed: { "@type": "City", name: "São Paulo" },
+            offers: { "@type": "Offer", priceCurrency: "BRL", description: s.price },
+          })),
+        })}</script>
       </Helmet>
 
       <main role="main" className="min-h-screen pt-24 pb-12">
@@ -81,7 +92,9 @@ const ServicesPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+          <section aria-labelledby="services-list-heading">
+            <h2 id="services-list-heading" className="sr-only">Lista de Serviços Odontológicos</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
             {servicesDetailed.map((service, index) => {
               const Icon = service.icon;
               return (
@@ -119,7 +132,8 @@ const ServicesPage = () => {
                 </Card>
               );
             })}
-          </div>
+            </div>
+          </section>
         </div>
       </main>
     </>

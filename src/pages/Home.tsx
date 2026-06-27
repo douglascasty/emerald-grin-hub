@@ -117,26 +117,24 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Green Smile - Clínica Odontológica em São Paulo | Implantes e Ortodontia</title>
+        <title>Green Smile – Clínica Odontológica em São Paulo</title>
         <meta
           name="description"
-          content="Clínica odontológica em São Paulo especializada em implantes dentários, ortodontia e estética dental. Agende sua consulta! ☎ (11) 97060-4418"
+          content="Clínica odontológica em São Paulo: implantes, ortodontia e estética dental. Agende sua consulta: (11) 97060-4418."
         />
-        <link rel="canonical" href={window.location.origin} />
+        <link rel="canonical" href={window.location.origin + "/"} />
         <meta name="robots" content="index,follow" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="Green Smile - Clínica Odontológica em São Paulo" />
+        <meta property="og:title" content="Green Smile – Clínica Odontológica em São Paulo" />
         <meta property="og:description" content="Implantes, Ortodontia e Estética Dental com tecnologia de ponta" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={window.location.origin} />
-        <meta property="og:image" content="https://lovable.dev/opengraph-image.png" />
+        <meta property="og:url" content={window.location.origin + "/"} />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Green Smile - Clínica Odontológica" />
+        <meta name="twitter:title" content="Green Smile – Clínica Odontológica" />
         <meta name="twitter:description" content="Implantes, Ortodontia e Estética Dental" />
-        <meta name="twitter:image" content="https://lovable.dev/opengraph-image.png" />
       </Helmet>
 
       <main role="main">
