@@ -20,9 +20,9 @@ const Footer = () => {
                 <Phone size={18} className="mt-0.5 flex-shrink-0" />
                 <span>(11) 97060-4418</span>
               </a>
-              <a href="mailto:greensmile_odonto@hotmail.com" className="flex items-start gap-2 hover:opacity-80 transition-opacity" aria-label="Enviar email para greensmile_odonto@hotmail.com">
+              <a href="mailto:greensmile.odonto@gmail.com" className="flex items-start gap-2 hover:opacity-80 transition-opacity" aria-label="Enviar email para greensmile.odonto@gmail.com">
                 <Mail size={18} className="mt-0.5 flex-shrink-0" />
-                <span>matrixgreen@hotmail.com</span>
+                <span>greensmile.odonto@gmail.com</span>
               </a>
               <div className="flex items-start gap-2">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0" />
