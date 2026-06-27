@@ -29,7 +29,7 @@ const ContactPage = () => {
             addressCountry: "BR",
           },
           telephone: "+5511970604418",
-          email: "greensmile_odonto@hotmail.com",
+          email: "greensmile.odonto@gmail.com",
           url: "https://greensmileodonto.lovable.app/contato",
           openingHoursSpecification: [
             { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "08:00", closes: "18:00" },
@@ -90,10 +90,10 @@ const ContactPage = () => {
                   <div>
                     <h3 className="font-bold text-lg mb-1">E-mail</h3>
                     <a
-                      href="mailto:greensmile_odonto@hotmail.com"
+                      href="mailto:greensmile.odonto@gmail.com"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      greensmile_odonto@hotmail.com
+                      greensmile.odonto@gmail.com
                     </a>
                   </div>
                 </div>
