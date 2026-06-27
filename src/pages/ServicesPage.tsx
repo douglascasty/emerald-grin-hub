@@ -81,7 +81,9 @@ const ServicesPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+          <section aria-labelledby="services-list-heading">
+            <h2 id="services-list-heading" className="sr-only">Lista de Serviços Odontológicos</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
             {servicesDetailed.map((service, index) => {
               const Icon = service.icon;
               return (

@@ -126,12 +126,13 @@ const ContactPage = () => {
                   title="Localização da Green Smile no Google Maps"
                 />
               </div>
-            </div>
+            </section>
 
             {/* Contact Form */}
-            <div className="animate-fade-in-up">
+            <section aria-labelledby="contact-form-heading" className="animate-fade-in-up">
+              <h2 id="contact-form-heading" className="text-2xl md:text-3xl font-bold mb-6">Envie uma Mensagem</h2>
               <ContactForm />
-            </div>
+            </section>
           </div>
         </div>
       </main>
