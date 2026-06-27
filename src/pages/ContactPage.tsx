@@ -9,13 +9,33 @@ const ContactPage = () => {
         <title>Contato - Green Smile Clínica Odontológica</title>
         <meta
           name="description"
-          content="Entre em contato com a Green Smile. Agende sua consulta pelo telefone (11) 97060-4418 ou preencha nosso formulário. Estamos na Av. Eng. Armando de Arruda Pereira, Jabaquara, São Paulo."
+          content="Fale com a Green Smile em São Paulo. Agende pelo (11) 97060-4418 ou pelo formulário. Av. Eng. Armando de Arruda Pereira, Jabaquara."
         />
         <link rel="canonical" href={`${window.location.origin}/contato`} />
-        
+
         <meta property="og:title" content="Contato - Green Smile" />
         <meta property="og:description" content="Agende sua consulta conosco" />
         <meta property="og:url" content={`${window.location.origin}/contato`} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Dentist",
+          name: "Green Smile Clínica Odontológica",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Av. Eng. Armando de Arruda Pereira, 2357",
+            addressLocality: "São Paulo",
+            addressRegion: "SP",
+            postalCode: "04309-011",
+            addressCountry: "BR",
+          },
+          telephone: "+5511970604418",
+          email: "greensmile_odonto@hotmail.com",
+          url: "https://greensmileodonto.lovable.app/contato",
+          openingHoursSpecification: [
+            { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "08:00", closes: "18:00" },
+            { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "08:00", closes: "13:00" },
+          ],
+        })}</script>
       </Helmet>
 
       <main role="main" className="min-h-screen pt-24 pb-12">
@@ -31,7 +51,8 @@ const ContactPage = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Info */}
-            <div className="space-y-8 animate-fade-in">
+            <section aria-labelledby="contact-info-heading" className="space-y-8 animate-fade-in">
+              <h2 id="contact-info-heading" className="text-2xl md:text-3xl font-bold">Informações de Contato</h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
