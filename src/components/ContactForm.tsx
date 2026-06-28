@@ -22,12 +22,22 @@ const ContactForm = () => {
   } = useForm<FormData>();
 
   const onSubmit = async (data: FormData) => {
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
-    console.log("Form submitted:", data);
-    toast.success("Mensagem enviada com sucesso!", {
-      description: "Entraremos em contato em breve.",
+    const to = "greensmile.odonto@gmail.com";
+    const subject = `Contato pelo site - ${data.name}`;
+    const body = [
+      `Nome: ${data.name}`,
+      `E-mail: ${data.email}`,
+      `Telefone: ${data.phone}`,
+      "",
+      "Mensagem:",
+      data.message,
+    ].join("\n");
+
+    const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+
+    toast.success("Abrindo seu aplicativo de e-mail...", {
+      description: `Mensagem direcionada para ${to}. Confirme o envio no seu app.`,
     });
     reset();
   };
