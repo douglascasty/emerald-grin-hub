@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, Shield, Award, Heart } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -77,31 +77,6 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Trust indicators with 3D cards */}
-          <div className="grid grid-cols-3 gap-4 md:gap-8 pt-16 max-w-4xl mx-auto">
-            {[
-              { icon: Award, value: "15+", label: "Anos de experiência", delay: "0s" },
-              { icon: Heart, value: "5000+", label: "Pacientes atendidos", delay: "0.1s" },
-              { icon: Shield, value: "4.9", label: "Avaliação média", delay: "0.2s" }
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="relative group animate-fade-in"
-                style={{ animationDelay: item.delay }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all"></div>
-                <div className="relative bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-6 hover:shadow-2xl hover:scale-105 transition-all hover:border-accent/50">
-                  <item.icon className="w-8 h-8 md:w-10 md:h-10 mx-auto mb-3 text-accent" />
-                  <div className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
-                    {item.value}
-                  </div>
-                  <div className="text-xs md:text-sm text-muted-foreground mt-2 font-medium">
-                    {item.label}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 
