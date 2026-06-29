@@ -116,7 +116,7 @@ const ContactPage = () => {
               {/* Map placeholder */}
               <div className="aspect-video rounded-xl overflow-hidden border-2 border-border">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.8859392746935!2d-46.62438212503803!3d-23.617099378765597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a7395c48d7b%3A0x7a4e4e1e5e5e5e5e!2sAv.%20Eng.%20Armando%20de%20Arruda%20Pereira%2C%202357%20-%20Jabaquara%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004309-011!5e0!3m2!1spt-BR!2sbr!4v1640000000000"
+                  src="https://maps.google.com/maps?q=Av.%20Eng.%20Armando%20de%20Arruda%20Pereira%2C%202357%20-%20Jabaquara%2C%20S%C3%A3o%20Paulo%20-%20SP&t=&z=16&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -126,6 +126,7 @@ const ContactPage = () => {
                   title="Localização da Green Smile no Google Maps"
                 />
               </div>
+
             </section>
 
             {/* Contact Form */}
