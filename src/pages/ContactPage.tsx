@@ -32,7 +32,7 @@ const ContactPage = () => {
           email: "greensmile.odonto@gmail.com",
           url: "https://greensmileodonto.lovable.app/contato",
           openingHoursSpecification: [
-            { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "08:00", closes: "18:00" },
+            { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "09:00", closes: "19:00" },
             { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "08:00", closes: "13:00" },
           ],
         })}</script>
@@ -105,7 +105,7 @@ const ContactPage = () => {
                   <div>
                     <h3 className="font-bold text-lg mb-2">Horário de Atendimento</h3>
                     <div className="space-y-1 text-muted-foreground">
-                      <p>Segunda a Sexta: 8h às 18h</p>
+                      <p>Segunda a Sexta: 9h às 19h</p>
                       <p>Sábado: 8h às 13h</p>
                       <p>Domingo: Fechado</p>
                     </div>
