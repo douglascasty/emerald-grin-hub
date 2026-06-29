@@ -27,8 +27,8 @@ const Home = () => {
         {
           "@type": "OpeningHoursSpecification",
           dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          opens: "08:00",
-          closes: "18:00",
+          opens: "09:00",
+          closes: "19:00",
         },
         {
           "@type": "OpeningHoursSpecification",
@@ -57,7 +57,7 @@ const Home = () => {
           name: "Qual é o horário de atendimento?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Atendemos de segunda a sexta das 8h às 18h, e aos sábados das 8h às 13h.",
+            text: "Atendemos de segunda a sexta das 9h às 19h, e aos sábados das 8h às 13h.",
           },
         },
         {

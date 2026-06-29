@@ -39,7 +39,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Horário de Atendimento</h3>
             <div className="text-sm space-y-1 opacity-90">
-              <p>Segunda a Sexta: 8h às 18h</p>
+              <p>Segunda a Sexta: 9h às 19h</p>
               <p>Sábado: 8h às 13h</p>
               <p>Domingo: Fechado</p>
             </div>
